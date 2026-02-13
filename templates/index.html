@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Web Assistant</h1>
+            <p>Your personal voice companion</p>
+        </header>
+
+        <main>
+            <div class="chat-box" id="chat-box">
+                <div class="message assistant">
+                    <p>Hello! Click the microphone to start.</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="mic-btn" class="mic-btn" onclick="toggleListening()">
+                    <span class="material-icons">mic</span>
+                </button>
+                <p id="status-text">Ready to listen...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

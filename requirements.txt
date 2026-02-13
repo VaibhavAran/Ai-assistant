@@ -1,0 +1,8 @@
+flask
+SpeechRecognition
+pyttsx3
+wikipedia
+pyjokes
+pywhatkit
+pyaudio
+pyautogui
